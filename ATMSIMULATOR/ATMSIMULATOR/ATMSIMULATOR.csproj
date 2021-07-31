@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{595E8C1A-9EAB-4AE2-8777-78B9DEAB5687}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ATMSIMULATOR</RootNamespace>
+    <AssemblyName>ATMSIMULATOR</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACTIVITYFORM_ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACTIVITYFORM_ATM.Designer.cs">
+      <DependentUpon>ACTIVITYFORM_ATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATM.Designer.cs">
+      <DependentUpon>ATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyAirtime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyAirtime.Designer.cs">
+      <DependentUpon>BuyAirtime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashout.Designer.cs">
+      <DependentUpon>Cashout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose Amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose Amount.Designer.cs">
+      <DependentUpon>Choose Amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose Operation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose Operation.Designer.cs">
+      <DependentUpon>Choose Operation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepositMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositMoney.Designer.cs">
+      <DependentUpon>DepositMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enter amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enter amount.Designer.cs">
+      <DependentUpon>Enter amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ACTIVITYFORM_ATM.resx">
+      <DependentUpon>ACTIVITYFORM_ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATM.resx">
+      <DependentUpon>ATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyAirtime.resx">
+      <DependentUpon>BuyAirtime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashout.resx">
+      <DependentUpon>Cashout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose Amount.resx">
+      <DependentUpon>Choose Amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose Operation.resx">
+      <DependentUpon>Choose Operation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositMoney.resx">
+      <DependentUpon>DepositMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enter amount.resx">
+      <DependentUpon>Enter amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
